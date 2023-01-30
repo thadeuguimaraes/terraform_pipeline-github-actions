@@ -34,7 +34,7 @@ resource "azurerm_network_interface_security_group_association" "nisga" {
   network_security_group_id = data.terraform_remote_state.vnet.outputs.security_group_id
 }
 
-resource "azurerm_linux_virtual_machine" "vm" {
+resource "azurerm_linux_virtual_machine" "vm-terraform" {
   name                  = "vm-terraform"
   resource_group_name   = azurerm_resource_group.resource_group.name
   location              = var.location
