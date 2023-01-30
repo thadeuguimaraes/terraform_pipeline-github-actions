@@ -50,7 +50,7 @@ provider "aws" {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "thadeu-remote-state"
+    bucket = "matrix-remote-state"
     key    = "aws-vpc/terraform.tfstate"
     region = "us-east-1"
   }
