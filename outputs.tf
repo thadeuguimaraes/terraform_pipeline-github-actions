@@ -1,5 +1,5 @@
 output "vm_azure_ip" {
-  value = azurerm_linux_virtual_machine.vm.public_ip_address
+  value = azurerm_linux_virtual_machine.vm-terraform.public_ip_address
 }
 
 output "vm_aws_ip" {
