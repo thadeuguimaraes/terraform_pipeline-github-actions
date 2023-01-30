@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "resource_group" {
-  name     = "vm"
+  name     = "vm-terraform"
   location = var.location
 
   tags = local.common_tags
